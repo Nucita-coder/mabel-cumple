@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Mabel 🕊️</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-image: url('la-cruz-cristiana-aparece-brillante-en-el-cielo-109145844.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.4);
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.8), inset 0 0 20px rgba(255, 255, 255, 0.9);
+            border: 5px solid rgba(255, 215, 0, 0.6);
+            backdrop-filter: blur(5px);
+            z-index: 10;
+            max-width: 800px;
+            animation: floatContainer 6s ease-in-out infinite;
+        }
+
+        @keyframes floatContainer {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 6rem;
+            margin: 0;
+            color: #ffd700;
+            text-shadow:
+                2px 2px 0 #fff,
+                -2px -2px 0 #fff,
+                2px -2px 0 #fff,
+                -2px 2px 0 #fff,
+                0px 5px 15px rgba(0, 0, 0, 0.4);
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #4a4a4a;
+            margin: 10px 0 20px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+        }
+
+        .lamento {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            color: #555;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+            border-left: 4px solid #gold;
+            border-right: 4px solid #gold;
+        }
+
+        .photo-placeholder {
+            width: 200px;
+            height: 250px;
+            background: url('image.png') center/cover no-repeat;
+            border: 8px solid #fff;
+            border-radius: 50% 50% 10px 10px;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 -20px 50px rgba(255, 255, 255, 0.8), 0 -40px 80px rgba(255, 215, 0, 0.6);
+            animation: divineGlow 2.5s ease-in-out infinite alternate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            position: relative;
+        }
+
+        @keyframes divineGlow {
+            0% {
+                box-shadow: 0 -15px 30px rgba(255, 255, 255, 0.6), 0 -30px 60px rgba(255, 215, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
+            }
+
+            100% {
+                box-shadow: 0 -30px 60px rgba(255, 255, 255, 1), 0 -60px 120px rgba(255, 215, 0, 0.9), 0 0 30px rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        .photo-placeholder::after {
+            content: "🕊️";
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 3rem;
+        }
+
+        .photo-placeholder::before {
+            content: "🌹";
+            position: absolute;
+            bottom: -15px;
+            left: -20px;
+            font-size: 3rem;
+            transform: rotate(-30deg);
+        }
+
+        .cross {
+            font-size: 3rem;
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            margin-bottom: -10px;
+        }
+
+        /* Doves Animation */
+        .dove {
+            position: absolute;
+            font-size: 4rem;
+            user-select: none;
+            z-index: 1;
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+            animation: fly linear infinite;
+        }
+
+        @keyframes fly {
+            0% {
+                transform: translateX(-10vw) translateY(10vh) scale(0.8) rotate(15deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateX(50vw) translateY(-10vh) scale(1) rotate(-5deg);
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateX(110vw) translateY(-30vh) scale(1.2) rotate(-15deg);
+                opacity: 0;
+            }
+        }
+
+        .d1 {
+            top: 20%;
+            left: -10%;
+            animation-duration: 15s;
+            animation-delay: 0s;
+        }
+
+        .d2 {
+            top: 60%;
+            left: -10%;
+            animation-duration: 20s;
+            animation-delay: 5s;
+            font-size: 3rem;
+        }
+
+        .d3 {
+            top: 40%;
+            left: -10%;
+            animation-duration: 12s;
+            animation-delay: 2s;
+            font-size: 5rem;
+        }
+
+        .d4 {
+            top: 80%;
+            left: -10%;
+            animation-duration: 18s;
+            animation-delay: 8s;
+            font-size: 2.5rem;
+        }
+
+        .d5 {
+            top: 10%;
+            left: -10%;
+            animation-duration: 16s;
+            animation-delay: 11s;
+            font-size: 4.5rem;
+        }
+
+        .d6 {
+            top: 30%;
+            left: -10%;
+            animation-duration: 14s;
+            animation-delay: 4s;
+            font-size: 3.5rem;
+        }
+
+        .d7 {
+            top: 70%;
+            left: -10%;
+            animation-duration: 17s;
+            animation-delay: 7s;
+            font-size: 4rem;
+        }
+
+        .ribbon {
+            background: #000;
+            color: #fff;
+            padding: 5px 100px;
+            position: absolute;
+            top: 40px;
+            right: -80px;
+            transform: rotate(45deg);
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            z-index: 20;
+            border: 2px solid #333;
+        }
+
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            display: none;
+            align-items: center;
+            gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 85%;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 3.5rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            .lamento {
+                font-size: 1.2rem;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+            .photo-placeholder {
+                width: 150px;
+                height: 190px;
+            }
+            .photo-placeholder::after, .photo-placeholder::before {
+                font-size: 2.5rem;
+            }
+            .ribbon {
+                padding: 5px 60px;
+                top: 30px;
+                right: -60px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ribbon">RECUERDO</div>
+
+    <!-- Animated Doves -->
+    <div class="dove d1">🕊️</div>
+    <div class="dove d2"><img src="pngwing.com.png" alt="paloma" style="width: 1.2em; height: auto;"></div>
+    <div class="dove d3">🕊️</div>
+    <div class="dove d4"><img src="pngwing.com.png" alt="paloma" style="width: 1.2em; height: auto;"></div>
+    <div class="dove d5">🕊️</div>
+    <div class="dove d6"><img src="pngwing.com.png" alt="paloma" style="width: 1.2em; height: auto;"></div>
+    <div class="dove d7">🕊️</div>
+
+    <div class="container">
+        <div class="cross">✝️</div>
+        <h2>En Memoria de tu Juventud</h2>
+
+        <div class="photo-placeholder">
+        </div>
+
+        <h1>¡Feliz Cumpleaños<br>Mabel!</h1>
+        <h3
+            style="font-family: 'Playfair Display', serif; color: #4a4a4a; margin-top: 5px; margin-bottom: 25px; font-size: 1.6rem; text-shadow: 1px 1px 3px rgba(255,255,255,0.8);">
+            Mayo 2004 - 2026</h3>
+
+        <div class="lamento">
+            "Un año más desde tu llegada a este mundo."
+        </div>
+
+        <p style="font-family: 'Playfair Display', serif; color: #666; margin-top: 20px;">
+            Por las viejas amistades.<br>
+            🌹 🕊️ 🌹
+        </p>
+    </div>
+
+    <div class="music-player">
+        <span style="margin-right: 10px;">🔊 Sonando: Tercer Cielo - Yo Te Extrañaré</span>
+        <audio autoplay loop controls style="height: 30px; width: 250px;" id="bg-audio">
+            <source src="Tercer Cielo - Yo Te Extrañare.mp3#t=34" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const audio = document.getElementById("bg-audio");
+            
+            function forcePlay() {
+                if (audio.paused) {
+                    audio.play().catch(() => {
+                        // El navegador bloquea autoplay; esperamos interacción.
+                    });
+                }
+            }
+
+            // Intentar reproducir inmediatamente
+            forcePlay();
+
+            // Cualquier interacción del usuario fuerza el inicio del audio
+            const events = ['click', 'mousemove', 'touchstart', 'scroll', 'keydown'];
+            events.forEach(evt => {
+                window.addEventListener(evt, forcePlay, { once: true });
+            });
+
+            // Reintentar constantemente si se llega a pausar
+            setInterval(forcePlay, 1000);
+        });
+    </script>
+</body>
+
+</html>
